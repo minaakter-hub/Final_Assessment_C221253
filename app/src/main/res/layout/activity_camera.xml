@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".camera"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set your Profile Picture"
+        android:paddingTop="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:paddingTop="50dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/img"
+        android:gravity="center"
+
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/camera"/>
+    <LinearLayout
+        android:paddingTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take Picture"
+            android:layout_gravity="center"
+            android:id="@+id/button"/>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Picture"
+            android:layout_gravity="center"
+            android:id="@+id/button1"/></LinearLayout>
+
+</LinearLayout>
